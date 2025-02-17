@@ -1,21 +1,20 @@
-# TestTask
+Prerequisites
+---
 
-**TODO: Add description**
+* cmake (rocksdb)
 
-## Installation
+* asdf
+OR
+* elixir-ls 
+* erlang
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `test_task` to your list of dependencies in `mix.exs`:
+Run
+---
 
-```elixir
-def deps do
-  [
-    {:test_task, "~> 0.1.0"}
-  ]
-end
+```
+$ mix deps.get
+$ mix compile
+$ iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at <https://hexdocs.pm/test_task>.
-
+Then open `http://localhost:8004/app/index.htm`

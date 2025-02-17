@@ -5,12 +5,11 @@ defmodule TestTask.Index do
   require Logger
 
   def room() do
-    x =
-      case :n2o.session(:room) do
-        '' -> "lobby"
-        "" -> "lobby"
-        x -> x
-      end
+    case :n2o.session(:room) do
+      ~c"" -> "lobby"
+      "" -> "lobby"
+      x -> x
+    end
   end
 
   def event(:init) do

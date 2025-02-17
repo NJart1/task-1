@@ -15,7 +15,7 @@ defmodule TestTask.Application do
 
   def start(_, _) do
     :kvs.join()
-    :io.format('Application URI: http://localhost:8004/app/index.htm')
+    IO.puts("Application URI: http://localhost:8004/app/index.htm")
 
     children = [
       {Bandit, scheme: :http, port: 8002, plug: TestTask.WS},
