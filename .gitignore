@@ -1,0 +1,8 @@
+/_build
+/.fetch
+/cover
+/deps
+/rocksdb
+erl_crash.dump
+sample-*.tar
+*.ez
