@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    <style>
+        message {
+            display: block;
+            font-size: 18px;
+            background: white;
+            padding: 8px 16px;
+            margin: 15px 0;
+            border-radius: 4px;
+            box-shadow: 0px 4px 40px rgba(100, 100, 100, .35);
+            white-space: pre-wrap;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+
+<body class="chat">
+    <main>
+        <form style="text-align: center">
+            <h2 id="heading">Кімната</h2>
+            <textarea id="message" rows="4" autofocus="true"
+                placeholder="Потрібно міркувати... Потрібно писати..."></textarea>
+            <button id="send">Надіслати</button>
+            <button id="logout">Вийти з Кімнати</button>
+        </form>
+        <div id="history" style="display: block"></div>
+    </main>
+    <script src="https://ws.n2o.dev/priv/utf8.js"></script>
+    <script src="https://ws.n2o.dev/priv/bert.js"></script>
+    <script src="https://ws.n2o.dev/priv/heart.js"></script>
+    <script src="https://ws.n2o.dev/priv/ieee754.js"></script>
+    <script src="https://ws.n2o.dev/priv/n2o.js"></script>
+    <script src="https://ws.n2o.dev/priv/ftp.js"></script>
+    <script src="https://nitro.n2o.dev/priv/js/nitro.js"></script>
+    <script>host = location.hostname; port = 8020; debug = true; persistent = true;</script>
+    <script>$io.do = function (r) { console.log(r); };</script>
+    <script>protos = [$bert]; N2O_start();</script>
+</body>
+
+</html>
